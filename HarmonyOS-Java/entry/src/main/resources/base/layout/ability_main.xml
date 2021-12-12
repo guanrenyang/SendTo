@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="#F1F3F5"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text"
+        ohos:height="40vp"
+        ohos:width="300vp"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="请长按头像选择接收者"
+        ohos:text_font="Headline5"
+        ohos:text_alignment="center"
+        ohos:background_element="$graphic:textbeaty"
+        ohos:text_size="20fp"
+        />
+
+    <ListContainer
+        ohos:id="$+id:Container1"
+        ohos:below="$id:text"
+        ohos:height="0"
+        ohos:weight="1"
+        ohos:top_margin="10vp"
+        ohos:rebound_effect="true"
+        ohos:width="355vp"/>
+
+</DirectionalLayout>

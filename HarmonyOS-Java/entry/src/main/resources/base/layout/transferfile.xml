@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#F1F3F5"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="#FFFFFF"
+        ohos:orientation="horizontal">
+    <Button
+        ohos:id="$+id:getbackintransfer"
+        ohos:height="25vp"
+        ohos:width="60vp"
+        ohos:text="返回"
+        ohos:text_font="Buttom"
+        ohos:text_size="16fp"
+        ohos:left_margin="10vp"
+        ohos:background_element="$graphic:butclicked"
+        ohos:text_color="#000000"
+        />
+    <Text
+        ohos:height="45vp"
+        ohos:width="200vp"
+        ohos:text="正在传输文件"
+        ohos:text_font="Headline6"
+        ohos:text_alignment="horizontal_center"
+        ohos:text_color="#000000"
+        ohos:left_margin="20vp"
+        ohos:text_size="26fp"/>
+
+
+    </DirectionalLayout>
+    <Text
+        ohos:height="2vp"
+        ohos:width="match_parent"
+        ohos:background_element="#33000000"
+        />
+    <ListContainer
+        ohos:height="0vp"
+        ohos:width="300vp"
+        ohos:weight="1"
+        ohos:rebound_effect="true"
+        ohos:id="$+id:Container3"
+        ohos:layout_alignment="center"
+        ohos:background_element="#F1F3F5"/>
+    <Text
+        ohos:height="2vp"
+        ohos:width="match_parent"
+        ohos:background_element="#33000000"
+        />
+    <ListContainer
+        ohos:height="0vp"
+        ohos:width="300vp"
+        ohos:weight="1"
+        ohos:rebound_effect="true"
+        ohos:layout_alignment="center"
+        ohos:id="$+id:Container4"
+        ohos:background_element="#F1F3F5"/>
+
+
+
+</DirectionalLayout>

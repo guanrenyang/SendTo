@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_SkipAbility",
+      "value": "entry_SkipAbility"
+    },
+    {
+      "name": "skipability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "skipability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "namedataability_description",
+      "value": "hap sample empty provider"
+    }
+  ]
+}

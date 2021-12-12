@@ -1,0 +1,225 @@
+{
+  "app": {
+    "bundleName": "com.example.transferfile",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.transferfile",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.transferfile.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "Bluetooth"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.transferfile.SkipAbility",
+        "icon": "$media:icon",
+        "description": "$string:skipability_description",
+        "label": "$string:entry_SkipAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "choosefile",
+              "transferfile"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.transferfile.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "backgroundModes": [
+          "dataTransfer",
+          "location",
+          "bluetoothInteraction",
+          "wifiInteraction"
+        ],
+        "name": "com.example.transferfile.DownloadServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:donwloadserviceability_description",
+        "type": "service"
+      },
+      {
+        "backgroundModes": [
+          "dataTransfer",
+          "location",
+          "bluetoothInteraction",
+          "wifiInteraction"
+        ],
+        "name": "com.example.transferfile.UploadServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:uploadserviceability_description",
+        "type": "service"
+      },
+      {
+        "permissions": [
+          "com.example.transferfile.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.transferfile.SearchFile",
+        "icon": "$media:icon",
+        "description": "$string:searchfile_description",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.SearchFile"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.AGConnectInitializeAbility"
+      },
+      {
+        "permissions": [
+          "com.example.transferfile.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.transferfile.UploadDataAbility",
+        "icon": "$media:icon",
+        "description": "",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.UploadDataAbility"
+      },
+      {
+        "permissions": [
+          "com.example.transferfile.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.transferfile.IPDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:ipdataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.IPDataAbility"
+      },
+      {
+        "permissions": [
+          "com.example.transferfile.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.transferfile.DownloadDataAbility",
+        "icon": "$media:icon",
+        "description": "",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.DownloadDataAbility"
+      },
+      {
+        "name": "com.example.transferfile.NameDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:namedataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.transferfile.NameDataAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.mycamera.Ability",
+            "com.mycamera.AbilityBackground"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.DISCOVER_BLUETOOTH"
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "com.example.transferfile.SearchFile.DATA"
+      },
+      {
+        "name": "com.example.transferfile.DATA"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.RECEIVER_STARTUP_COMPLETED"
+      },
+      {
+        "name": "ohos.permission.RUNNING_LOCK"
+      },
+      {
+        "name": "ohos.permission.SYSTEM_FLOAT_WINDOW"
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA"
+      },
+      {
+        "name": "ohos.permission.WRITE_EXTERNAL_STORAGE"
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA"
+      },
+      {
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "name": "ohos.permission.USE_BLUETOOTH"
+      },
+      {
+        "name": "ohos.permission.CAMERA"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.MICROPHONE"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.example.transferfile.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}

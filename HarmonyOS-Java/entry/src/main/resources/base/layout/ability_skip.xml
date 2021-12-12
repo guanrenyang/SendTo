@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_content"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:height="match_parent"
+        ohos:width="355vp"
+        ohos:id="$+id:imgskip"
+        ohos:image_src="$media:a"
+        ohos:scale_mode="stretch"/>
+    <Button
+        ohos:height="25vp"
+        ohos:width="60vp"
+        ohos:background_element="$graphic:skipbutton"
+        ohos:id="$+id:SkipButton"
+        ohos:text="跳过"
+        ohos:text_font="Buttom2"
+        ohos:text_color="#000000"
+        ohos:text_size="16fp"
+        ohos:top_margin="30vp"
+        ohos:left_margin="275vp"
+        />
+
+
+
+</StackLayout>

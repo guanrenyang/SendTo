@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="85vp"
+    ohos:width="300vp"
+    ohos:alignment="center"
+    ohos:background_element="$graphic:clicked"
+    ohos:top_margin="10vp"
+    ohos:orientation="horizontal">
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="80vp"
+        ohos:width="80vp"
+        ohos:alignment="center"
+        ohos:orientation="vertical">
+    <Image
+        ohos:id="$+id:filepic"
+        ohos:height="40vp"
+        ohos:width="40vp"
+        ohos:scale_mode="inside"
+        ohos:image_src="$media:pic"/>
+    <Text
+        ohos:id="$+id:ittext"
+        ohos:height="20vp"
+        ohos:width="80vp"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:text="没有文件传出！"
+        ohos:text_font="Body3"
+        ohos:text_color="#CC000000"
+        ohos:text_alignment="horizontal_center"
+        ohos:text_size="12fp"
+        />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="80vp"
+        ohos:width="200vp"
+        ohos:alignment="center"
+        ohos:top_margin="10vp"
+        ohos:orientation="vertical">
+    <Text
+        ohos:id="$+id:Progresstext"
+        ohos:height="30vp"
+        ohos:width="100vp"
+        ohos:text="0%"
+        ohos:text_color="#CC000000"
+        ohos:text_alignment="center"
+        ohos:left_margin="75vp"
+        ohos:text_size="18fp"
+        />
+    <ProgressBar
+        ohos:id="$+id:transferpro"
+        ohos:height="30vp"
+        ohos:width="180vp"
+        ohos:left_margin="15vp"
+        ohos:bottom_margin="15vp"
+        ohos:max="100"
+        ohos:min="0"
+        ohos:layout_alignment="center"
+        ohos:progress="100"
+        ohos:scrollbar_color="#21A8FD"
+        ohos:scrollbar_background_color="#FFD63F3F"
+        />
+
+
+    </DirectionalLayout>
+
+
+
+</DirectionalLayout>

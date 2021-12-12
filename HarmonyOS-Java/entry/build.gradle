@@ -1,0 +1,51 @@
+apply plugin: 'com.huawei.ohos.hap'
+//apply plugin: 'com.huawei.agconnect'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
+ohos {
+//    signingConfigs {
+//        debug {
+//            storeFile file('C:\\Users\\86185\\.ohos\\config\\debug.p12')
+//            storePassword '0000001C35E57A4940F1A94D11637612370C54E4318163E41781FCD3B31E533EC00A22FA20D94A6EE66C0699'
+//            keyAlias = 'byx'
+//            keyPassword '0000001C6BC3E1467EF8E5A8823978B67DA3045F61F00B4A331D54E3493D9D35A899BF08AA7F370E61A021A0'
+//            signAlg = 'SHA256withECDSA'
+//            profile file('C:\\Users\\86185\\.ohos\\config\\auto_debug_transferfile_260086000304870699.p7b')
+//            certpath file('C:\\Users\\86185\\.ohos\\config\\auto_debug_260086000304870699.cer')
+//        }
+//    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'com.gitee.ts_ohos:filepicker:1.0.1'
+    implementation 'io.openharmony.tpc.thirdlib:fastblelib:1.0.4'
+    implementation 'io.github.dzsf:ohosdownloader:1.0.0'
+    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.2.0.300'
+    implementation 'com.huawei.agconnect:agconnect-remoteconfig-harmony:1.2.0.300'
+    implementation 'com.huawei.agconnect:agconnect-applinking-harmony:1.2.0.300'
+    implementation 'com.huawei.agconnect:agconnect-crash-harmony:1.2.0.300'
+    implementation "com.huawei.agconnect:agconnect-auth-harmony:1.2.0.300"
+    implementation 'com.huawei.agconnect:agconnect-appmessaging-harmony:1.2.0.300'
+    implementation 'com.huawei.agconnect:agconnect-function-harmony:1.2.0.300'
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+}
+
+
+decc {
+    supportType = ['html', 'xml']
+}

@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "skipability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "skipability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_SkipAbility",
+      "value": "entry_SkipAbility"
+    },
+    {
+      "name": "donwloadserviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "uploadserviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "searchfile_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "downloaddataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "ipdataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "namedataability_description",
+      "value": "hap sample empty provider"
+    }
+  ]
+}

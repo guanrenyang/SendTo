@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<DirectionalLayout
+    ohos:id="$+id:dl11"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="60vp"
+    ohos:width="300vp"
+    ohos:background_element="$graphic:clicked"
+    ohos:alignment="center"
+    ohos:left_margin="30vp"
+    ohos:top_margin="20vp"
+    ohos:orientation="horizontal">
+    <Image
+        ohos:id="$+id:itemimage11"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:scale_mode="inside"
+        ohos:left_margin="20vp"
+        ohos:image_src="$media:unknown"
+        />
+    <DirectionalLayout
+        ohos:id="$+id:dl12"
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:orientation="vertical">
+    <Text
+        ohos:id="$+id:itemtext11"
+        ohos:height="25vp"
+        ohos:width="match_parent"
+        ohos:text="IP:XXXXXXX.XX.XXXX"
+        ohos:text_font="Headline7"
+        ohos:text_size="15fp"
+        ohos:text_alignment="center"
+        ohos:truncation_mode="auto_scrolling"
+        />
+    <Text
+        ohos:id="$+id:itemtext12"
+        ohos:height="25vp"
+        ohos:width="match_parent"
+        ohos:text="IP:XXXXXXX.XX.XXXX"
+        ohos:text_font="Headline7"
+        ohos:text_size="15fp"
+        ohos:text_alignment="center"
+        ohos:truncation_mode="auto_scrolling"
+        />
+    </DirectionalLayout>
+</DirectionalLayout>

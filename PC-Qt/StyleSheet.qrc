@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>SpyBot.qss</file>
+        <file>Toolery.qss</file>
+        <file>DeepBox.qss</file>
+    </qresource>
+</RCC>
